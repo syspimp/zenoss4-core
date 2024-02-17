@@ -16,6 +16,7 @@ ENV ZENHOME="/usr/local/zenoss"
 ADD ssh_fixes/test/* /opt/zenoss/lib/python/twisted/conch/test/
 ADD ssh_fixes/ssh/* /opt/zenoss/lib/python/twisted/conch/ssh/
 # NOTE: you are implicitly accepting the EULA from vmware to use resxtop
+# original location https://developer.vmware.com/web/tool/7.0/resxtop/
 ADD resxtop-7.0.0-15992393-lin64.tgz /tmp/
 # from the install.sh, excluding the man docs
 RUN <<EOF
